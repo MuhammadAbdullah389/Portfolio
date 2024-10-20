@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: papayawhip;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    min-height: 15vh;
+    position: relative;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+header .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+}
+
+header .hamburger {
+    display: none;
+}
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width : 481px) {
+    header {
+        min-height: 10vh;
+    }
+
+    button {
+        display: none;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+
+    header nav ul{
+        background-color: papayawhip;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 0.8rem;
+        padding-bottom: 8px;
+    }
+
+    ul:nth-child(1){
+        padding-top: 10px;
+    }
+
+}
