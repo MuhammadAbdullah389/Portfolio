@@ -5,13 +5,14 @@
 }
 
 header {
-    background-color: papayawhip;
+    background-color: navy;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     min-height: 15vh;
     position: relative;
+    color: #450d0d;
 }
 
 header .logo {
@@ -35,7 +36,7 @@ header .logo span {
 header nav ul{
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 100px;
 }
 
 header nav ul li {
@@ -46,7 +47,7 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     padding: 5px 10px;
-    color: black;
+    color: beige;
 }
 
 header .hamburger {
@@ -55,9 +56,11 @@ header .hamburger {
 button {
     padding: 10px 20px;
     border-radius: 10px;
+    background-color: #FFC0CB;
+    color: black;
 }
 
-@media only screen and (max-width : 481px) {
+@media only screen and (max-width : 768px) {
     header {
         min-height: 10vh;
     }
@@ -68,6 +71,7 @@ button {
 
     header .hamburger {
         display: block;
+        transform: scale(2);
     }
 
     header nav ul{
@@ -87,4 +91,10 @@ button {
         padding-top: 10px;
     }
 
+}
+
+@media only screen and (max-width : 1024px){
+    header nav ul{
+        gap: 30px;
+    }
 }
