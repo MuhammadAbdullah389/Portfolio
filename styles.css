@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -220,6 +224,14 @@ footer {
         display: flex;
         flex-flow: column wrap;
         justify-content: space-between;
+    }
+
+    footer div h1{
+      border-bottom: none;
+    }
+    footer div h1 span {
+      padding-bottom: 3px;
+      border-bottom: 1px solid red;
     }
 
 }
