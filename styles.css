@@ -13,7 +13,7 @@ header {
     min-height: 15vh;
     position: relative;
     color: #F5F5DC;
-    border-bottom: 2px dotted beige;
+    border-bottom: 1px dotted beige;
 }
 
 header .logo {
@@ -133,6 +133,7 @@ footer {
     background-color: navy;
     display: flex;
     justify-content: space-between;
+    border-top: 1px dotted beige;
   }
   footer div {
     margin: 10px;
@@ -199,7 +200,7 @@ footer {
         text-align: center;
         font-size: 0.8rem;
         padding-bottom: 8px;
-        border-bottom: 2px dotted beige;
+        border-bottom: 1px dotted beige;
     }
 
     ul:nth-child(1){
