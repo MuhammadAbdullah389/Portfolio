@@ -66,6 +66,22 @@ button {
     color: black;
 }
 
+#about {
+  min-height: 300px;
+  background-color: navy;
+  border: 1px dotted white;
+  border-left: none;
+  color: beige;
+  font-size: larger;
+  line-height: 30px;
+  padding: 20px;
+}
+
+#about h1 {
+  padding-bottom: 10px;
+  color: #F5F5DC;
+}
+
 .skills-section {
   background-color: navy;
   color: beige;
@@ -133,6 +149,13 @@ h2 {
     font-size: 1.05rem;
     color: beige;
   }
+
+  .skill-item p a{
+    font-size: 1.05rem;
+    color: beige;
+    text-decoration: none;
+  }
+
 footer {
     background-color: navy;
     display: flex;
