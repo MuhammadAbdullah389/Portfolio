@@ -1,0 +1,203 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  header {
+      background-color: navy;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      min-height: 15vh;
+      position: relative;
+      color: #F5F5DC;
+      border-bottom: 1px dotted beige;
+  }
+  
+  header .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+  }
+  
+  header .logo img {
+      height: 40px;
+      width: 40px;
+      border-radius: 10px;
+  }
+  
+  header .logo span {
+      font-size: 1.5rem;
+      font-weight: bold;
+  }
+  
+  header nav ul{
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+  }
+  
+  header nav ul li {
+      list-style-type: none;
+      transition: all ease-in-out 0.2s;
+      
+  }
+  
+  header nav ul li a {
+      text-decoration: none;
+      padding: 5px 10px;
+      color: beige;
+  }
+  
+  header nav ul li:hover{
+    transform: scale(1.2);
+    color: white;
+    
+  }
+  
+  header .hamburger {
+      display: none;
+      color: white;
+  }
+  button {
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: #FFC0CB;
+      color: black;
+  }
+
+  footer {
+      background-color: navy;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px dotted beige;
+    }
+    footer div {
+      margin: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    footer div .links{
+      margin: 0;
+      padding: 0;
+    }
+    footer div h1 {
+      color: white;
+      font-size: medium;
+      margin: 20px 20px 20px 5px;
+      border-bottom: 1px solid red;
+    }
+    footer div a {
+      margin: 5px;
+      text-decoration: none;
+      color: rgb(174, 162, 162);
+    }
+  
+    footer div a:hover {
+      color: #fff;
+    }
+    /*  */
+  
+  @media only screen and (max-width: 481px) {
+    /* .skill-item {
+      flex: 1 1 100%; 
+    } */
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .skill-item h3 {
+      font-size: 1.3rem;
+    }
+  
+    .skill-item p {
+      font-size: 1rem;
+    }
+    
+  }
+  
+  @media only screen and (max-width : 768px) {
+      header {
+          min-height: 10vh;
+      }
+  
+      button {
+          display: none;
+      }
+  
+      header .hamburger {
+          display: block;
+          transform: scale(2);
+      }
+  
+      header nav ul{
+          background-color: navy;
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 70px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-size: 0.8rem;
+          padding-bottom: 8px;
+          border-bottom: 1px dotted beige;
+      }
+  
+      ul:nth-child(1){
+          padding-top: 20px;
+      }
+  
+      ul:last-child{
+          padding-bottom: 20px;
+      }
+  
+      footer {
+          background-color: navy;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-between;
+      }
+  
+      footer div h1{
+        border-bottom: none;
+      }
+      footer div h1 span {
+        padding-bottom: 3px;
+        border-bottom: 1px solid red;
+      }
+      footer div {
+        padding: 10px;
+      }
+      footer div .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+  
+      #about h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+        margin-top: 10px; /* Adjust margin */
+    }
+  
+      #about h2 {
+          font-size: 1.5rem; /* Smaller font size for mobile */
+          margin-top: 20px; /* Adjust margin */
+       }
+  
+  }
+  
+  @media only screen and (max-width : 1024px){
+      header nav ul{
+          gap: 30px;
+      }
+  }
